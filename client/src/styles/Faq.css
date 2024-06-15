@@ -1,0 +1,19 @@
+.faq-container {
+    text-align: center;
+    padding: 80px 20px;
+    color: #173f5f;
+    width: 45%;
+  }
+  
+  .faq-title {
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .faq-description {
+    margin-bottom: 20px;
+    width: 100%;
+    letter-spacing: 1.2px;
+  }
+  
+  

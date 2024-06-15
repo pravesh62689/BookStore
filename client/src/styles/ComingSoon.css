@@ -1,0 +1,103 @@
+.coming-soon {
+    padding: 20px;
+}
+
+.carousel .slide {
+      height: 70vh;
+    background: none;
+    position: relative;
+  }
+  
+  .banner-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    color: #173f5f;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .banner-content {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.banner-title {
+    margin-bottom: 10px;
+    font-weight:700 !important;
+    margin-bottom: 20px !important;
+}
+
+.banner-description {
+    text-align: center !important;
+      width: 60%;
+  }
+  
+  .view-more-button {
+    border-color: white;
+    color: white;
+  }
+  
+  .view-more-button:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    background-color: #d94c00 !important;
+  }
+  
+  .coming-soon .pagination-dot {
+    position: absolute;
+    bottom: 5%;
+    left: 40%;
+    margin: auto;
+    width: 10px;
+    height: 10px;
+    background-color: #ccc !important;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  
+  .coming-soon .carousel .control-dots .dot{
+      background-color: #d94c00 !important;
+      
+    }
+    .coming-soon .carousel .control-dots .dot {
+      background-color: #ccc;
+  }
+.coming-soon .carousel .control-dots {
+    position: absolute;
+    bottom: 20px !important;
+    left: 45% !important;
+    display: flex;
+    justify-content: flex-start;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+}
+  
+
+.coming-soon .carousel .control-dots .dot {
+    width: 14px;
+    height: 14px;
+    background-color: grey !important;
+    transition: all 0.3s ease;
+  }
+  
+  .coming-soon .carousel .control-dots .dot.selected {
+    background-color: #d94c00 !important;
+    padding: 2px;
+  }

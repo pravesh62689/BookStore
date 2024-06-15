@@ -6,6 +6,9 @@ import Categories from './components/Categories';
 import LoginBanner from './components/LoginBanner';
 import NewReleases from './components/NewReleases';
 import BookCard from './components/BookCard';
+import ComingSoon from './components/ComingSoon';
+import ForFree from './components/ForFree';
+import Faq from './components/Faq';
 // Import other components as needed
 
 function App() {
@@ -18,6 +21,9 @@ function App() {
       <LoginBanner/>
       <NewReleases/>
       <BookCard/>
+      <ComingSoon/>
+      <ForFree/>
+      <Faq/>
       <Footer />
     </div>
   );

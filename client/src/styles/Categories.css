@@ -4,7 +4,7 @@
     padding:6% 3%;
   }
   
-  .title {
+  .category-title {
     margin-bottom: 20px;
   }
   
@@ -71,4 +71,4 @@
   .view-all-button:hover {
     background-color: #d94c00;
   }
-  
+ 

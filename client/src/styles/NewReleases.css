@@ -6,7 +6,7 @@
     justify-content: center !important;
   }
   
-  .view-all-button {
+  .view-all-button-new-release {
     display: block;
     width: 30%;
     margin: 0 auto 20px;
@@ -31,14 +31,14 @@
     width: 100%;
   }
   
-  .pagination {
+  .new-releases .pagination {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 20px;
   }
   
-  .pagination-dot {
+  .new-releases .pagination-dot {
     position: absolute;
     bottom: 5%;
     left: 40%;
@@ -50,13 +50,13 @@
     cursor: pointer;
   }
   
-  .pagination-dot.active {
+  .new-releases .pagination-dot.active {
     background-color: #000;
   }
   
-  .carousel .control-dots {
+  .new-releases .carousel .control-dots {
     position: absolute;
-    bottom: 90px !important;
+    bottom: 10px !important;
     left: 45% !important;
     display: flex;
     justify-content: flex-start;
@@ -64,7 +64,7 @@
     padding: 0;
     margin: 0;}
 
-    .underline-new-releases::after {
+    .new-releases .underline-new-releases::after {
       content: '';
       display: block;
       width: 90%;
@@ -72,4 +72,16 @@
       height: 3px;
       background-color: #ccc; 
       margin-left: 75px; 
+    }
+
+    .new-releases .carousel .control-dots .dot {
+      width: 14px;
+      height: 14px;
+      background-color: grey !important;
+      transition: all 0.3s ease;
+    }
+    
+    .new-releases .carousel .control-dots .dot.selected {
+      background-color: #d94c00 !important;
+      padding: 2px;
     }

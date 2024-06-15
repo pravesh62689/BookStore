@@ -57,10 +57,10 @@
     height: 100%;
   }
   
-  .carousel .control-dots {
+  .banner-container .carousel .control-dots {
     position: absolute;
-    bottom: 40px; /* Adjust as needed */
-    left: 50px; /* Position dots to the left by 260px */
+    bottom: 130px; /* Adjust as needed */
+    left: 40px; /* Position dots to the left by 260px */
     display: flex;
     justify-content: flex-start;
     list-style: none;
@@ -68,17 +68,15 @@
     margin: 0;
   }
 
-  .carousel .control-dots .dot {
+  .banner-container .carousel .control-dots .dot {
     background-color: grey;
-    border: 2px solid grey;
     width: 14px;
     height: 14px;
     transition: all 0.3s ease;
   }
   
-  .carousel .control-dots .dot.selected {
-    background-color: red;
-    border: 1px solid red;
+  .banner-container .carousel .control-dots .dot.selected {
+    background-color: #d94c00;
     padding: 2px;
   }
   

@@ -32,7 +32,7 @@ const Categories = () => {
 
         {/* Explore Our Top Categories */}
         <Grid item xs={12} md={3.8} style={{border:"1px  solid #D3D3D3", borderRadius:"10px",margin:"15px",padding:"70px 0px "}}>
-          <Typography variant="h4" align="center" className="title" style={{fontWeight:"700" ,color:"#173f5f",fontSize:"2.5rem"}}>
+          <Typography variant="h4" align="center" className="Category-title" style={{ fontWeight:"700" ,color:"#173f5f",fontSize:"2.5rem",}}>
             Explore Our Top Categories
           </Typography>
           <div className="view-all-button-container">

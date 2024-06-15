@@ -124,7 +124,7 @@ const NewReleases = () => {
       </Typography>
       <div style={{display:"flex",justifyContent:"center"}}>
 
-      <Typography variant="h6" component="h6" style={{color:"#ed553b",}} className="view-all-button">
+      <Typography variant="h6" component="h6" style={{color:"#ed553b",}} className="view-all-button-new-release">
         View All Products →
       </Typography>
       </div>
