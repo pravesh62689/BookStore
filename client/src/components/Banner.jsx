@@ -67,15 +67,17 @@ const BannerCarousel = () => {
             </Carousel>
           </Grid>
           <Grid item xs={12} md={6} className="image-section">
-            <Box
-              className="image-container"
-              sx={{
-                backgroundImage: 'url(https://images.pexels.com/photos/4033849/pexels-photo-4033849.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load)',
-                backgroundSize: 'cover',
-                backgroundPosition: 'center',
-                height: '100%',
-              }}
-            />
+          <img
+  className="image-container"
+  src="https://cdn.pixabay.com/photo/2017/11/12/18/29/book-2943367_1280.png"
+  alt="Book image"
+  style={{
+    width: '100%',
+    height: '100%',
+    objectFit: 'contain',
+    objectPosition: 'center',
+  }}
+/>
           </Grid>
         </Grid>
       </Container>
