@@ -56,7 +56,7 @@
   
   .new-releases .carousel .control-dots {
     position: absolute;
-    bottom: 10px !important;
+    bottom: 30px !important;
     left: 45% !important;
     display: flex;
     justify-content: flex-start;

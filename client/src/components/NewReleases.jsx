@@ -113,7 +113,7 @@ const NewReleases = () => {
   }
 
   return (
-    <div style={{padding:"5% 0 0 0"}}>
+    <div style={{padding:"5% 0 5% 0"}}>
 
     <Container className="new-releases">
       <Typography variant="h4" component="h2" align="center" style={{color:"#173f5f",fontSize:"1.5rem" ,fontWeight:"600"}} gutterBottom>
@@ -166,7 +166,7 @@ const NewReleases = () => {
         ))}
       </Carousel>
     </Container>
-    <Typography variant="caption" style={{ padding: "0 100px" }} className="underline-new-releases">
+    <Typography variant="caption" style={{ padding: "100px 10px" }}  className="underline">
         
       </Typography>
     </div>

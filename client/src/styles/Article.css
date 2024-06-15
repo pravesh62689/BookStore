@@ -1,0 +1,60 @@
+.article-container {
+    text-align: center;
+    max-width: 100% !important;
+    background-color: #f7fcfc;
+    padding: 40px 20px;
+}
+
+.article-subtitle {
+    margin-bottom: 10px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    color: #777;
+  }
+  
+  .article-title {
+      margin-bottom: 40px;
+      font-weight: bold;
+      color:#173f5f;
+    }
+    
+    .article-grid {
+        margin-bottom: 40px;
+    }
+    
+    .article-card {
+        box-shadow: none;
+        text-align: left;
+        background-color: #f7fcfc !important;
+    }
+    
+    .article-image {
+        width: 100%;
+        height: 280px;
+    }
+    
+    .article-date {
+        margin-bottom: 10px;
+        font-size: 0.9em;
+        color: #888;
+    }
+    
+    .article-card-title {
+        color:#173f5f;
+        font-weight: bold;
+    }
+    
+    .article-button {
+        border-color: #000;
+        color: #000;
+    }
+    
+    .social-icons {
+        display: flex;
+        justify-content: right;
+        margin-top: 10px;
+        color:#173f5f !important;
+  }
+  .css-bhp9pd-MuiPaper-root-MuiCard-root{
+    box-shadow: none !important;
+  }

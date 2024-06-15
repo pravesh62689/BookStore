@@ -3,7 +3,7 @@ import { Container, Grid, Card, CardMedia, CardContent, Typography, Rating, Butt
 
 const BookCard = () => {
   return (
-    <div style={{ padding: "5% 0 5% 0" }}>
+    <div style={{ padding: "0% 0 5% 0" }}>
 
       <Container className="new-releases">
 

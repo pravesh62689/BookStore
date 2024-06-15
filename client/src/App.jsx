@@ -9,6 +9,7 @@ import BookCard from './components/BookCard';
 import ComingSoon from './components/ComingSoon';
 import ForFree from './components/ForFree';
 import Faq from './components/Faq';
+import Article from './components/Articles';
 // Import other components as needed
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
       <ComingSoon/>
       <ForFree/>
       <Faq/>
+      <Article/>
       <Footer />
     </div>
   );
