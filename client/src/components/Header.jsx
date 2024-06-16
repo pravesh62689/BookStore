@@ -28,7 +28,13 @@ const Header = () => {
 
   const [searchText, setSearchText] = useState('');
   const [isInputFocused, setIsInputFocused] = useState(false);
-
+ 
+    const [activeLink, setActiveLink] = useState('home'); // initialize active link to 'home'
+  
+    const handleLinkClick = (link) => {
+      setActiveLink(link); // update active link when a link is clicked
+    };
+  
   const handleSearchChange = (event) => {
     setSearchText(event.target.value);
   };
@@ -155,7 +161,8 @@ const Header = () => {
         <Grid container justifyContent="space-around" alignItems="center" style={{ padding: "0 16%" }}>
           <Grid item>
             <Typography variant="h6" style={{ fontSize: "16px", }} className="header-nav-item">
-              <Link href="#" underline="none">
+              <Link href=""  underline="none"   className={activeLink === 'home' ? 'active' : ''}
+        onClick={() => handleLinkClick('home')}>
                 HOME
               </Link>
             </Typography>

@@ -7,13 +7,13 @@ import '../styles/BannerCarousel.css';
 const Banner = ({ title, description }) => {
   return (
     <Box className="text-section">
-      <Typography variant="h1" gutterBottom sx={{ fontSize: 46, fontWeight: 700, textAlign: "left" }}>
+      <Typography variant="h1" gutterBottom sx={{ fontSize: 46, fontWeight: 700, textAlign: "left" }} className='banner-title'>
         {title}
       </Typography>
       <Typography variant="body1" gutterBottom sx={{ fontSize: 20, paddingTop: "10px", textAlign: "left", color: "#173f5f", wordSpacing: "2px", fontWeight: "500" }}>
         {description}
       </Typography>
-      <Button variant="contained" style={{ width: "30%", padding: "12px 0", paddingTop: "10px", borderRadius: "8px" }} sx={{ mt: 2, color: "#173f5f", border: '1px solid #173f5f', backgroundColor: "transparent", '&:hover': { backgroundColor: "#173f5f", border: '#FF9900', color: "white" } }}>
+      <Button variant="contained" className='banner-button' style={{  padding: "12px 0", paddingTop: "10px", borderRadius: "8px" }} sx={{ mt: 2, color: "#173f5f", padding: "22px 22px", border: '1px solid #173f5f', backgroundColor: "transparent", '&:hover': { backgroundColor: "#173f5f", border: '#FF9900', color: "white" } }}>
         READ MORE →
       </Button>
     </Box>
@@ -48,7 +48,7 @@ const BannerCarousel = () => {
     <Box className="carousel-container">
       <Container maxWidth="xxl">
         <Grid container className="banner-container">
-          <Grid item xs={12} md={6} className="carousel-section">
+          <Grid item md={8} xs={12} sm={6} className="carousel-section">
             <Carousel
               autoPlay
               infiniteLoop
@@ -66,7 +66,7 @@ const BannerCarousel = () => {
               ))}
             </Carousel>
           </Grid>
-          <Grid item xs={12} md={6} className="image-section">
+          <Grid item xs={12} sm={4} md={4} className="image-section">
           <img
   className="image-container"
   src="https://cdn.pixabay.com/photo/2017/11/12/18/29/book-2943367_1280.png"
