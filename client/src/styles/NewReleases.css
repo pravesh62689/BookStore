@@ -1,87 +1,151 @@
 .new-releases {
-    padding: 20px 20px 0px 20px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center !important;
+  padding: 20px 20px 0px 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center !important;
+}
+
+.view-all-button-new-release {
+  display: block;
+  width: 30%;
+  margin: 0 auto 20px;
+  background-color: transparent !important;
+  box-shadow: none;
+  font-size: 1rem ;
+  text-align: center;
+}
+
+.book-grid {
+  margin-top: 20px;
+}
+
+.book-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 55vh;
+}
+
+.book-card img {
+  width: 100%;
+}
+
+.new-releases .pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.new-releases .pagination-dot {
+  position: absolute;
+  bottom: 5%;
+  left: 40%;
+  margin: auto;
+  width: 10px;
+  height: 10px;
+  background-color: #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.new-releases .pagination-dot.active {
+  background-color: #000;
+}
+
+.new-releases .carousel .control-dots {
+  position: absolute;
+  bottom: 30px !important;
+  left: 45% !important;
+  display: flex;
+  justify-content: flex-start;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.new-releases .carousel .control-dots .dot {
+  width: 14px;
+  height: 14px;
+  background-color: grey !important;
+  transition: all 0.3s ease;
+}
+
+.new-releases .carousel .control-dots .dot.selected {
+  background-color: #d94c00 !important;
+  padding: 2px;
+}
+
+/* Media queries for responsiveness */
+
+/* Extra small screens (less than 576px) */
+@media (max-width: 575px) {
+  .css-46bh2p-MuiCardContent-root{
+    padding: 0 !important;
   }
-  
-  .view-all-button-new-release {
-    display: block;
-    width: 30%;
-    margin: 0 auto 20px;
-    background-color:transparent !important;
-    box-shadow: none;
-    font-size: 1rem !important;
-    text-align: center;
-  }
-  
-  .book-grid {
-    margin-top: 20px;
-  }
-  
   .book-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height:55vh;
+    height: 40vh;
   }
-  
-  .book-card img {
-    width: 100%;
+  .new-releases{
+    height: 70vh !important;
   }
-  
-  .new-releases .pagination {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
+  .view-all-button-new-release {
+    font-size: 14px !important;
   }
-  
-  .new-releases .pagination-dot {
-    position: absolute;
-    bottom: 5%;
-    left: 40%;
-    margin: auto;
-    width: 10px;
-    height: 10px;
-    background-color: #ccc;
-    border-radius: 50%;
-    cursor: pointer;
-  }
-  
-  .new-releases .pagination-dot.active {
-    background-color: #000;
-  }
-  
   .new-releases .carousel .control-dots {
     position: absolute;
-    bottom: 30px !important;
+    bottom: 100px !important;
     left: 45% !important;
     display: flex;
     justify-content: flex-start;
     list-style: none;
     padding: 0;
-    margin: 0;}
+    margin: 0;
+  }
+  
+}
+@media (max-width: 576px){
+  .new-releases .carousel .control-dots {
+    position: absolute;
+    bottom: 160px !important;
+    left: 0 !important;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+}
+/* Small screens (576px to 767px) */
+@media (min-width: 576px) and (max-width: 767px) {
+  .book-card {
+    height: 60vh;
+  }
+  .view-all-button-new-release {
+    font-size: 18px !important;
+  }
+  
+  
+}
 
-    .new-releases .underline-new-releases::after {
-      content: '';
-      display: block;
-      width: 90%;
-      margin: 0 0%;
-      height: 3px;
-      background-color: #ccc; 
-      margin-left: 75px; 
-    }
+/* Medium screens (768px to 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .book-card {
+    height: 50vh;
+  }
+}
 
-    .new-releases .carousel .control-dots .dot {
-      width: 14px;
-      height: 14px;
-      background-color: grey !important;
-      transition: all 0.3s ease;
-    }
-    
-    .new-releases .carousel .control-dots .dot.selected {
-      background-color: #d94c00 !important;
-      padding: 2px;
-    }
+/* Large screens (992px to 1199px) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .book-card {
+    height: 55vh;
+  }
+}
+
+/* Extra large screens (1200px and up) */
+@media (min-width: 1200px) {
+  .book-card {
+    height: 60vh;
+  }
+}

@@ -1,76 +1,94 @@
 .for-free-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #fdf3f1;
-    max-width: 100% !important;
-    padding: 0 !important;
-  }
-  
-  .image-box {
-    height: 100%;
-    overflow: hidden;
-  }
-  
-  .free-books-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  .content-box {
-    display: flex;
-    height: 80%;
-    width: 70%;
-    color: #000;
-    align-items: left;
-    flex-direction: column;
-    justify-content: center;
-    padding: 30px 60px;
-    margin-left: 65px !important;
-  }
-  
-  .title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fdf3f1;
+  max-width: 100% !important;
+  padding: 20px !important;
+  box-sizing: border-box;
+}
 
-    margin-bottom: 20px;
-    line-height: 60px !important;
-    font-weight: 700 !important;
-    font-size: 1.9rem !important;
+.image-box {
+  height: 100%;
+  overflow: hidden;
+}
+
+.free-books-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content-box {
+  display: flex;
+  color: #000;
+  flex-direction: column;
+  justify-content: center;
+  padding: 80px;
+}
+
+.title {
+  margin-bottom: 20px;
+  line-height: 1.5;
+  font-weight: 700;
+  font-size: 1.9rem;
 }
 
 .description {
-      line-height: 30px !important;
-    margin-bottom: 80px !important;
-    width: 85%;
-    font-weight:500 !important;
-    font-size: 1.1rem !important;
+  line-height: 1.5;
+  margin-bottom: 40px;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.subscribe-box {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.input-style::placeholder {
+  color: #d3d3d3 !important;
+  font-weight: 600;
+}
+
+.input-style:focus {
+  color: #5f5f5f;
+}
+
+/* Responsive Styles */
+@media (max-width: 900px) {
+  .title {
+      font-size: 1.5rem;
+  }
+  
+  .description {
+      font-size: 1rem;
+      margin-bottom: 20px;
+  }
+  
+  .content-box {
+      padding: 20px;
   }
   
   .subscribe-box {
-    display: flex;
-    align-items: center;
+      flex-direction: column;
   }
   
-  .email-input {
-    flex-grow: 1;
-    margin-right: 10px;
+  .input-style {
+      width: 100%;
+      padding: .9rem !important;
+      border-radius: 0.5rem;
   }
   
-  .subscribe-button {
-    background-color: #ff6347;
-    color: white;
+  .subscribe-box input[type="button"] {
+      width: 55%;
+      padding: .9rem !important;
+      border-radius: 0.5rem;
+      margin-left: 0;
   }
   
-  .subscribe-button:hover {
-    background-color: #ff4500;
+  .image-box {
+      display: none;
   }
-
-  .for-free-container .input-style::placeholder {
-    color: #d3d3d3 !important; 
-    font-weight: 600;/* Placeholder text color with opacity */
-  }
-
-  .for-free-container .input-style:focus {
-    color: #5f5f5f; /* Text color when focused */
-  }
-  
+}

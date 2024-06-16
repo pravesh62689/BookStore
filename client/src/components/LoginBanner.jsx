@@ -22,13 +22,13 @@ const LoginBanner = () => {
               <Typography variant="h5" style={{
                 fontWeight: "800", lineHeight: "38px", width: "80%",
                 letterSpacing: "1px"
-              }}>Access, Read,Practice & Engage with Digital Content (eBook)</Typography>
+              }} className='width-text'>Access, Read,Practice & Engage with Digital Content (eBook)</Typography>
               <Typography variant="h6" style={{
                 paddingTop: "15px", width: "80%", fontSize: '1.2rem',
                 letterSpacing: "0.5px"
-              }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu feugiat amet, libero ipsum enim pharetra hac. Urna commodo, lacus ut magna velit eleifend. Amet, quis urna, a eu. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</Typography>
+              }} className='width-text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu feugiat amet, libero ipsum enim pharetra hac. Urna commodo, lacus ut magna velit eleifend. Amet, quis urna, a eu. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</Typography>
               <div >
-                <div style={{ display: "flex", padding: "40px 0px" }}>
+                <div style={{ display: "flex", padding: "40px 0px" }} className='width-text'>
                   <input
                     type="email"
                     className='input-style'

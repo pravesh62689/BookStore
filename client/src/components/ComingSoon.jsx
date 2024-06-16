@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Typography, Button, Box } from '@mui/material';
+import { Container, Typography, Button, Box ,useMediaQuery, useTheme} from '@mui/material';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import '../styles/ComingSoon.css';
@@ -26,8 +26,24 @@ const banners = [
 ];
 
 const ComingSoon = () => {
+  const theme = useTheme();
+  const isSmallScreen = useMediaQuery(theme.breakpoints.down('sm'));
+  const isMediumScreen = useMediaQuery(theme.breakpoints.between('sm', 'md'));
+  const isLargeScreen = useMediaQuery(theme.breakpoints.up('md'));
+
+  const getTitleFontSize = () => {
+    if (isSmallScreen) return '1.5rem';
+    if (isMediumScreen) return '2rem';
+    return '2.5rem';
+  };
+
+  const getDescriptionFontSize = () => {
+    if (isSmallScreen) return '1rem';
+    if (isMediumScreen) return '1.25rem';
+    return '1.5rem';
+  };
   return (
-    <Container className="coming-soon" style={{maxWidth:"100%"}}>
+    <Container className="coming-soon">
       <Carousel
         showThumbs={false}
         showStatus={false}
@@ -39,17 +55,30 @@ const ComingSoon = () => {
         emulateTouch
       >
         {banners.map((banner, index) => (
-          <Box key={index} className="banner-slide" style={{ backgroundImage: ` url(${banner.image})` }}>
+          <Box key={index} className="banner-slide" style={{ backgroundImage: `url(${banner.image})` }}>
             <Box className="banner-content">
-              <Typography variant="h3" component="h2" className="banner-title">
+            <Typography
+                variant="h3"
+                component="h2"
+                className="banner-title"
+                style={{ fontSize: getTitleFontSize() }}
+              >
                 {banner.title}
               </Typography>
-              <Typography variant="body1" className="banner-description">
+              <Typography
+                variant="body1"
+                className="banner-description"
+                style={{ fontSize: getDescriptionFontSize() }}
+              >
                 {banner.description}
               </Typography>
-              <Button variant="contained" style={{ width: "25%", padding: "10px 0", paddingTop: "10px", borderRadius: "8px", marginTop: "20px" }} sx={{ mt: 2, color: "#173f5f", border: '1px solid #173f5f', backgroundColor: "transparent", '&:hover': { backgroundColor: "#173f5f", border: '#FF9900', color: "white" } }}>
-                  VIEW MORE →
-                </Button>
+              <Button 
+                variant="contained" 
+                className="view-more-button"
+                sx={{ mt: 2, border: '1px solid #173f5f', backgroundColor: "transparent", color:"#173f5f", '&:hover': { backgroundColor: "#173f5f", border: '#FF9900', color: "white" } }}
+              >
+                VIEW MORE →
+              </Button>
             </Box>
           </Box>
         ))}

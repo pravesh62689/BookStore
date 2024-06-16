@@ -1,27 +1,30 @@
-import React from 'react'
-import { Container, Grid, Card, CardMedia, CardContent, Typography, Rating, Button } from '@mui/material';
-
+import React from 'react';
+import { Container, Grid, Card, CardContent, Typography, Rating, Button } from '@mui/material';
+import "../styles/BookCard.css"
 const BookCard = () => {
   return (
-    <div style={{ padding: "0% 0 5% 0" }}>
-
-      <Container className="new-releases">
-
-
-        <Grid container spacing={4} className="book-grid" style={{ height: "60vh" }}>
-          <Grid item xs={12} sm={6} md={4} style={{ paddingTop: "0" }}>
-
-            <img
-
-              height="450"
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLRCk4WeEGBS13guV-6wlt-ljqYKGOXFxKz2EcQrsJetjbAtALDBiwJt2VtOOuSfhxcIc&usqp=CAUhttps://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLRCk4WeEGBS13guV-6wlt-ljqYKGOXFxKz2EcQrsJetjbAtALDBiwJt2VtOOuSfhxcIc&usqp=CAUhttps://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLRCk4WeEGBS13guV-6wlt-ljqYKGOXFxKz2EcQrsJetjbAtALDBiwJt2VtOOuSfhxcIc&usqp=CAUhttps://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLRCk4WeEGBS13guV-6wlt-ljqYKGOXFxKz2EcQrsJetjbAtALDBiwJt2VtOOuSfhxcIc&usqp=CAUhttps://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLRCk4WeEGBS13guV-6wlt-ljqYKGOXFxKz2EcQrsJetjbAtALDBiwJt2VtOOuSfhxcIc&usqp=CAUhttps://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLRCk4WeEGBS13guV-6wlt-ljqYKGOXFxKz2EcQrsJetjbAtALDBiwJt2VtOOuSfhxcIc&usqp=CAUhttps://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLRCk4WeEGBS13guV-6wlt-ljqYKGOXFxKz2EcQrsJetjbAtALDBiwJt2VtOOuSfhxcIc&usqp=CAU"
-              alt="Book"
-
-            />
+    <div className='book-card-main' >
+      <Container className="book-new-releases">
+        <Grid container spacing={4} className="book-grid">
+          <Grid item xs={12} md={4} style={{ paddingTop: "0" }}>
+            <div style={{ position: "relative", paddingBottom: "100%", overflow: "hidden" }}>
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLRCk4WeEGBS13guV-6wlt-ljqYKGOXFxKz2EcQrsJetjbAtALDBiwJt2VtOOuSfhxcIc&usqp=CAU"
+                alt="Book"
+                style={{
+                  position: "absolute",
+                  top: 0,
+                  left: 0,
+                  width: "100%",
+                  height: "100%",
+                  objectFit: "cover"
+                }}
+              />
+            </div>
           </Grid>
-          <Grid item xs={12} sm={6} md={8} style={{ paddingTop: "70px", }} >
-            <Card className="book-card" style={{ boxShadow: "none", height: "fit-content" }}  >
-              <CardContent >
+          <Grid item xs={12} md={8} style={{ paddingTop: "20px" }}>
+            <Card className="book-card" style={{ boxShadow: "none", height: "fit-content" }}>
+              <CardContent>
                 <Typography variant="h2" color="textSecondary" style={{ fontSize: ".9rem", fontWeight: "500" }}>
                   Featured Book Of the Week
                 </Typography>
@@ -32,7 +35,16 @@ const BookCard = () => {
                 <Typography variant="subtitle1" color="textSecondary">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu feugiat amet, libero ipsum enim pharetra hac. Urna commodo, lacus ut magna velit eleifend. Amet, quis urna, a eu. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </Typography>
-                <Button variant="contained" style={{ width: "25%", padding: "10px 0", paddingTop: "10px", borderRadius: "8px", marginTop: "60px" }} sx={{ mt: 2, color: "#173f5f", border: '1px solid #173f5f', backgroundColor: "transparent", '&:hover': { backgroundColor: "#173f5f", border: '#FF9900', color: "white" } }}>
+                <Button
+                  variant="contained"
+                  style={{ width: "100%", padding: "10px 0", borderRadius: "8px", marginTop: "20px" }}
+                  sx={{
+                    color: "#173f5f",
+                    border: '1px solid #173f5f',
+                    backgroundColor: "transparent",
+                    '&:hover': { backgroundColor: "#173f5f", border: '#FF9900', color: "white" }
+                  }}
+                >
                   VIEW MORE →
                 </Button>
               </CardContent>
@@ -41,7 +53,7 @@ const BookCard = () => {
         </Grid>
       </Container>
     </div>
-  )
-}
+  );
+};
 
-export default BookCard
+export default BookCard;

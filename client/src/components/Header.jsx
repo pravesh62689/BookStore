@@ -58,8 +58,8 @@ const Header = () => {
       <Toolbar>
         <Grid container className='header-padding' justifyContent="space-between" alignItems="center">
           <Grid item>
-            <Typography variant="subtitle2" className="header-phone">
-              <Link href="tel:+918374902234" underline="none" style={{ color: "#173f5f" }}>
+            <Typography variant="subtitle2" className="header-phone" sx={{paddingBottom:"10%"}}>
+              <Link href="tel:+918374902234" underline="none" style={{ color: "#173f5f" }} >
                 +91 8374902234
               </Link>
             </Typography>
@@ -138,7 +138,7 @@ const Header = () => {
             </Grid>
           </Grid>
           <Grid item>
-            <Box className="header-links" sx={{ display: 'flex', alignItems: 'center' }}>
+            <Box className="header-links" sx={{ display: 'flex', alignItems: 'center', padding:"5%  0" }}>
               <Link href="#" style={{ color: "#173f5f", textDecoration: "none", display: "flex", alignItems: "center" }}>
                 <PersonOutlineOutlinedIcon style={{ marginRight: '7px' }} />
                 <Typography variant="caption" style={{ color: "#173f5f", fontWeight: "700", fontSize: "12px", marginRight: '15px' }}>ACCOUNT</Typography>
