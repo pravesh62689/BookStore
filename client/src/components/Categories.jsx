@@ -13,7 +13,7 @@ const categoryList = [
 
 const Categories = () => {
   return (
-    <div className="categories-container">
+    <div className="categories-container" id='explore'>
       <Grid container spacing={3} justifyContent="center" alignItems="stretch">
 
         {/* Higher Education */}

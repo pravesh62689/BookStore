@@ -161,7 +161,7 @@ const Header = () => {
         <Grid container justifyContent="space-around" alignItems="center" style={{ padding: "0 16%" }}>
           <Grid item>
             <Typography variant="h6" style={{ fontSize: "16px", }} className="header-nav-item">
-              <Link href=""  underline="none"   className={activeLink === 'home' ? 'active' : ''}
+              <Link href="#home"  underline="none"   className={activeLink === 'home' ? 'active' : ''}
         onClick={() => handleLinkClick('home')}>
                 HOME
               </Link>
@@ -173,7 +173,7 @@ const Header = () => {
           </Grid>
           <Grid item>
             <Typography variant="h6" style={{ fontSize: "16px" }} className="header-nav-item">
-              <Link href="#" underline="none">
+              <Link href="#footer" underline="none">
                 ABOUT US
               </Link>
             </Typography>
@@ -184,7 +184,7 @@ const Header = () => {
           </Grid>
           <Grid item>
             <Typography variant="h6" style={{ fontSize: "16px" }} className="header-nav-item">
-              <Link href="#" underline="none">
+              <Link href="#explore" underline="none">
                 BOOKS
               </Link>
             </Typography>
@@ -195,7 +195,7 @@ const Header = () => {
           </Grid>
           <Grid item>
             <Typography variant="h6" style={{ fontSize: "16px" }} className="header-nav-item">
-              <Link href="#" underline="none">
+              <Link href="#release" underline="none">
                 NEW RELEASE
               </Link>
             </Typography>
@@ -206,7 +206,7 @@ const Header = () => {
           </Grid>
           <Grid item>
             <Typography variant="h6" style={{ fontSize: "16px" }} className="header-nav-item">
-              <Link href="#" underline="none">
+              <Link href="#login" underline="none">
                 CONTACT US
               </Link>
             </Typography>
@@ -217,7 +217,7 @@ const Header = () => {
           </Grid>
           <Grid item>
             <Typography variant="h6" style={{ fontSize: "16px" }} className="header-nav-item">
-              <Link href="#" underline="none">
+              <Link href="#article" underline="none">
                 BLOG
               </Link>
             </Typography>

@@ -45,7 +45,7 @@ const BannerCarousel = () => {
   ];
 
   return (
-    <Box className="carousel-container">
+    <Box className="carousel-container" id="home">
       <Container maxWidth="xxl">
         <Grid container className="banner-container">
           <Grid item md={8} xs={12} sm={6} className="carousel-section">

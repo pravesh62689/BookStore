@@ -8,7 +8,7 @@ import '../styles/LoginBanner.css';
 const LoginBanner = () => {
 
   return (
-    <Box className="login-banner-container">
+    <Box className="login-banner-container" id="login">
       <Container maxWidth="xxl">
         <Grid container className="login-container">
           <Grid item xs={12} md={8} className="login-section">

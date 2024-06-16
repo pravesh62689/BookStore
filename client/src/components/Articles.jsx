@@ -26,7 +26,7 @@ const articles = [
 
 const Article = () => {
   return (
-    <Container className="article-container" style={{ padding: "4% 10%" }}>
+    <Container className="article-container" style={{ padding: "4% 10%" }} id="article">
       <Typography variant="subtitle1" className="article-subtitle" style={{ fontSize: ".8rem" }}>
         READ OUR ARTICLES
       </Typography>

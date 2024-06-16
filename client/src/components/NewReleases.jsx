@@ -114,7 +114,7 @@ const NewReleases = () => {
     slides.push(books.slice(i, i + itemsPerPage));
   }
   return (
-    <div style={{ padding: "5% 0 5% 0" }}>
+    <div style={{ padding: "5% 0 5% 0" }} id='release'>
 
       <Container className="new-releases">
         <Typography variant="h4" component="h2" align="center" style={{ color: "#173f5f", fontSize: "1.5rem", fontWeight: "600" }} gutterBottom>
