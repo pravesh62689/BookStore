@@ -1,8 +1,9 @@
 BookStore: Your Ultimate Digital Bookstore
 Welcome to BookStore, a modern online bookstore built with ReactJS and Vite. Designed to provide a seamless and enjoyable reading experience, BookStore allows you to explore a diverse range of books and access digital content effortlessly.
-## 🌐 Live Demo
 
-Check out the live demo of BookStore here: [Live Demo]([https://your-live-demo-link.com](https://transcendent-clafoutis-6cb984.netlify.app/))
+## 🚀 Explore BookStore in Action!
+
+Dive into the live demo of TreeBooks and see it in action: [Check it Out](https://transcendent-clafoutis-6cb984.netlify.app/)
 
 🛠️ Technologies Used
 ReactJS: A powerful library for building user interfaces.
